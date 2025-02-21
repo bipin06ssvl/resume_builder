@@ -1,0 +1,27 @@
+.Header_burgerMenu__UbzIt {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 22px;
+  height: 14px;
+  cursor: pointer;
+}
+.Header_burgerMenuWhite__acFeY .Header_burgerBar__xQvas {
+  background: #fff;
+}
+.Header_burgerBar__xQvas {
+  width: 100%;
+  height: 2px;
+  background: #000;
+  transition: transform 0.3s;
+  border-radius: 8px;
+}
+.Header_menuOpen__Ua1uD .Header_burgerBar__xQvas:first-child {
+  transform: rotate(45deg) translate(4px, 4px);
+}
+.Header_menuOpen__Ua1uD .Header_burgerBar__xQvas:nth-child(2) {
+  opacity: 0;
+}
+.Header_menuOpen__Ua1uD .Header_burgerBar__xQvas:nth-child(3) {
+  transform: rotate(-45deg) translate(4px, -5px);
+}
