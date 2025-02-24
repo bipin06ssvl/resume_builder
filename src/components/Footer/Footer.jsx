@@ -12,7 +12,7 @@ const Footer = () => {
               <i className="fa-solid fa-chevron-right text-lg text-white bg-gray-700 group-hover:bg-[#0096ff] w-12 h-12 pt-[10px] text-center rounded-full"></i>
             </Link>
           </div>
-          <div className="grid grid-cols-4 py-4 px-20">
+          <div className="grid grid-cols-2 md:grid-cols-4 py-4 px-20 gap-2">
             <div className="flex flex-col">
               <div className="pb-4 font-medium">Get Started</div>
               <ul className="text-gray-800">
@@ -75,7 +75,7 @@ const Footer = () => {
               </ul>
             </div>
           </div>
-          <div className="w-full py-8 text-center text-gray-900 border-t border-gray-400">
+          <div className="w-full px-4 md:px-0 py-8 text-center text-gray-900 border-t border-gray-400">
             Made with love by people who care. SSVL Technologies © 2025. All
             rights reserved.
           </div>

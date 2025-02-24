@@ -53,8 +53,8 @@ const ReviewCard = ({ img, name, username, body, title }) => {
   return (
     <figure
       className={cn(
-        "relative h-full w-80 cursor-pointer overflow-hidden rounded-xl border p-4",
-        "border-gray-950/[.1] bg-white hover:bg-white/[.9]",
+        "relative h-full w-80 cursor-pointer overflow-hidden rounded-xl p-4",
+        " bg-white/[0.9] hover:bg-white/[.9] drop-shadow-[-2px_0_5px_rgba(255,255,255,0.6)]",
         "dark:border-gray-50/[.1] dark:bg-white/[.10] dark:hover:bg-white/[.15]"
       )}
     >
@@ -86,8 +86,8 @@ const ReviewCard = ({ img, name, username, body, title }) => {
 const Review = () => {
   return (
     <>
-      <section className="w-full h-full bg-[#2d3639] ">
-        <div className="m-auto lg:max-w-7xl py-20">
+      <section className="w-full  bg-[#2d3639] ">
+        <div className="w-full m-auto lg:max-w-7xl py-10 lg:py-20">
           {/* <div className="absolute w-[90%] h-[80%] align-middle z-0">
             <img
               alt="Enhancv Background Fold Image"
@@ -109,8 +109,8 @@ const Review = () => {
               }}
             ></img>
           </div> */}
-          <div className="flex w-full pb-20 ">
-            <h1 className="font-rubik text-center text-6xl font-bold text-white mx-24 z-[2]">
+          <div className="flex w-full pb-10 lg:pb-20 ">
+            <h1 className="font-rubik text-center text-3xl md:text-5xl lg:text-6xl font-bold text-white mx-4 lg:mx-24 z-[2]">
               Reviewed by the community. Trusted by professionals
             </h1>
           </div>

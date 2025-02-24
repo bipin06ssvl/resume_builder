@@ -1,3 +1,4 @@
+import CategoryResume from "@/components/CategoryResume/CategoryResume";
 import FeatureResume from "@/components/FeatureResume/FeatureResume";
 import Hero from "@/components/Hero/Hero";
 import PowerfullResume from "@/components/PowerfullResume/PowerfullResume";
@@ -13,6 +14,7 @@ const Home = () => {
       <PowerfullResume />
       <Templates />
       <FeatureResume />
+      <CategoryResume />
     </>
   );
 };

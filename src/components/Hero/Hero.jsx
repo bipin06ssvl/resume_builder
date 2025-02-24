@@ -29,13 +29,13 @@ const Hero = () => {
 
   return (
     <>
-      <section className="relative bg-[#fafbfd] py-20 ">
-        <div className="absolute z-0 w-full h-full">
+      <section className="block w-full bg-[#fafbfd] py-12 md:py-20">
+        {/* <div className="absolute z-0 w-full h-full">
           <img
-            alt="Enhancv Background Fold Image"
+            alt="Background Fold Image"
             src={mainBG}
             data-nimg="fill"
-            className="transition-opacity duration-500 opacity-100"
+            className="transition-opacity duration-500 opacity-100 z-0"
             style={{
               position: "absolute",
               height: "100%",
@@ -50,46 +50,61 @@ const Hero = () => {
               // paddingBottom: "16%",
             }}
           ></img>
-        </div>
-        <div className="w-full m-auto lg:max-w-7xl z-10">
-          <div className="flex flex-col gap-2 lg:flex-row ">
-            <div className="flex flex-col w-[60%]">
-              <h1 className=" font-medium font-rubik text-6xl leading-[76px] text-[#2d3639] z-[2] ">
+        </div> */}
+        <div className="w-full p-8 lg:p-0 md:m-auto xl:max-w-7xl lg:max-w-4xl z-10">
+          <div className="flex flex-col gap-2 lg:flex-row justify-center">
+            <div className="flex flex-col w-full xl:w-[60%] lg:w-1/2 items-center lg:items-start justify-center">
+              <h1 className=" font-medium font-rubik text-3xl leading-10 md:text-5xl text-center lg:text-start lg:text-5xl xl:text-6xl md:leading-[56px]  lg:leading-[76px] text-[#2d3639] z-[2] ">
                 Resume’s <span>Resume</span> <span>Builder</span> helps you get
                 hired at top companies
               </h1>
-              <div className="flex flex-row gap-8 my-8">
-                <Button className="py-2 h-14 bg-[#0096ff]" size="lg">
+              <div className="flex flex-row gap-8 my-4 md:my-8">
+                <Button className="py-2 h-14 bg-[#0096ff] z-10" size="lg">
                   Create Your CV
                 </Button>
               </div>
-              <div className="flex flex-col">
-                <h5 className="text-gray-500 font-rubik font-semibold pt-8 pb-4">
+              <div className="flex flex-col items-center justify-center">
+                <h5 className="text-gray-500 font-rubik font-semibold text-center lg:text-start pt-8 pb-4">
                   Loved by interviewers at
                 </h5>
-                <div className="flex flex-row gap-6 w-full items-center z-[2] ">
+                <div className="flex flex-row gap-2 md:gap-4 lg:gap-3 xl:gap-6 w-full items-center z-[2] ">
                   <div className="flex items-center">
-                    <img src={imgTesla} className="max-w-[72px] h-auto"></img>
+                    <img
+                      src={imgTesla}
+                      className="max-w-[52px] md:max-w-[72px] h-auto"
+                    ></img>
                   </div>
                   <div className="flex items-center">
-                    <img src={imgGoogle} className="max-w-[72px]"></img>
+                    <img
+                      src={imgGoogle}
+                      className="max-w-[52px] md:max-w-[72px] h-auto"
+                    ></img>
                   </div>
                   <div className="flex items-center">
-                    <img src={imgFacebook} className="max-w-[72px]"></img>
+                    <img
+                      src={imgFacebook}
+                      className="max-w-[52px] md:max-w-[72px] h-auto"
+                    ></img>
                   </div>
                   <div className="flex items-center">
-                    <img src={imgSpotify} className="max-w-[72px]"></img>
+                    <img
+                      src={imgSpotify}
+                      className="max-w-[52px] md:max-w-[72px] h-auto"
+                    ></img>
                   </div>
                   <div className="flex items-center">
-                    <img src={imgAmazon} className="max-w-[72px] h-auto"></img>
+                    <img
+                      src={imgAmazon}
+                      className="max-w-[52px] md:max-w-[72px] h-auto"
+                    ></img>
                   </div>
                 </div>
               </div>
-              <h2 className="mt-24 mb-16 font-normal font-rubik text-4xl leading-9 text-[#2d3639] z-[2]">
+              <h2 className="mt-12 mb-8 md:mt-24 md:mb-16 font-normal font-rubik text-2xl md:text-4xl text-center lg:text-start leading-9 text-[#2d3639] z-[2]">
                 Pick a resume template and build your resume in minutes!
               </h2>
             </div>
-            <div className="h-[40rem] flex items-center justify-center w-[40%]">
+            <div className="h-[30rem] md:h-[40rem] flex items-center justify-center md:px-36 lg:px-0 w-full xl:w-[40%] lg:w-1/2">
               <CardStack items={CARDS} />
             </div>
           </div>

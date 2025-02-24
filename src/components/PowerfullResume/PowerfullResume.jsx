@@ -35,14 +35,14 @@ const resumeList = [
 const PowerfullResume = () => {
   return (
     <>
-      <section className="w-full h-full">
-        <div className="m-auto lg:max-w-7xl py-20">
-          <div className="flex justify-center w-full pb-20 ">
-            <h1 className="text-center font-rubik text-5xl font-bold text-gray-900 mx-24 z-[2]">
+      <section className="w-full">
+        <div className="w-full px-4 lg:p-0 md:m-auto xl:max-w-7xl lg:max-w-4xl py-10 lg:py-20">
+          <div className="flex justify-center w-full pb-10 lg:pb-20 ">
+            <h1 className="text-center font-rubik text-3xl md:text-5xl lg:text-6xl font-bold text-gray-900 mx-4 lg:mx-24 z-[2]">
               Get hired fast with a powerful resume
             </h1>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 grid-rows-2 gap-24">
+          <div className="grid grid-cols-1 ms:grid-cols-2 lg:grid-cols-3 grid-rows-2 gap-12 lg:gap-24">
             {resumeList.map((resume, index) => (
               <div key={index} className="col-span-1 row-span-2">
                 <div className="flex items-start gap-4">

@@ -16,12 +16,12 @@ function App() {
     <>
       <Router>
         <Header />
-        <main className="">
-          <Routes>
-            <Route path="/" element={<Home />} />
-            {/* <Route path="/about" element={<About />} /> */}
-          </Routes>
-        </main>
+        {/* <main className="w-full px-0"> */}
+        <Routes>
+          <Route path="/" element={<Home />} />
+          {/* <Route path="/about" element={<About />} /> */}
+        </Routes>
+        {/* </main> */}
         <Footer />
       </Router>
     </>
