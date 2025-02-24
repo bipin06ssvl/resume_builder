@@ -167,7 +167,7 @@ const CategoryResume = () => {
                     src={categoryList[selectedIndex].template}
                     className={`rounded-[30px] shadow-[0_0px_10px_rgb(0,0,0,0.2)] animate-fade-in [animation-duration:0.7s] `}
                   ></img>
-                  <div className="bg-[#2a97e6] shadow-[0_0px_10px_rgb(0,0,0,0.2)] absolute flex items-center justify-center rounded-full p-6 text-white w-20 h-20 right-[-5%] top-[-5%] text-[40px] leading-none z-10 [--scaleValue:0.3] animate-zoom-in [animation-duration:0.7s]">
+                  <div className="bg-[#2a97e6] shadow-[0_0px_10px_rgb(0,0,0,0.2)] absolute flex items-center justify-center rounded-full p-6 text-white w-12 h-12 sm:w-20 sm:h-20 right-[-5%] top-[-5%] text-[40px] leading-none z-10 [--scaleValue:0.3] animate-zoom-in [animation-duration:0.7s]">
                     {categoryList[selectedIndex].icon}
                   </div>
                 </div>
