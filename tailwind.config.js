@@ -9,6 +9,8 @@ export default {
       },
       fontFamily: {
         rubik: ["Rubik", "sans-serif"],
+        lobster: ["Lobster", "sans-serif"],
+        playwrite: ["Playwrite IT Moderna", "sans-serif"],
       },
       keyframes: {
         "fade-in": {

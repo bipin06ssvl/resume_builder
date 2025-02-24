@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import BurgerMenu from "./BurgerMenu";
 import Menu from "./Menu";
 import { PulsatingButton } from "../magicui/pulsating-button";
+import logo from "@/assets/Images/logo.png";
 
 const Header = () => {
   return (
@@ -12,14 +13,18 @@ const Header = () => {
           <BurgerMenu />
           <Link
             to={"/"}
-            className="text-3xl text-[#0096ff] text-center lg:text-start font-rubik font-semibold"
+            className="flex items-center gap-2 sm:text-xl md:text-3xl text-[#01466b] font-playwrite text-center lg:text-start font-semibold"
           >
-            Resume
+            <img src={logo} className="h-10 md:h-14"></img>
+            Workpatrika
           </Link>
           {/* <BurgerMenu /> */}
           <Menu />
-          <div className="flex flex-row gap-4 flex-wrap items-center right-4">
-            <PulsatingButton>Sign in</PulsatingButton>
+          <div className="flex flex-row flex-wrap items-center right-4 text-sm">
+            <PulsatingButton>
+              <span className="hidden ms:block">Sign in</span>
+              <i className="fa-solid fa-arrow-right-to-bracket ms:hidden"></i>
+            </PulsatingButton>
           </div>
         </div>
       </nav>
