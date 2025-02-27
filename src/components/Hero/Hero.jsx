@@ -10,8 +10,10 @@ import imgAmazon from "../../assets/Images/resources/amazon.png";
 import { CardStack } from "../ui/CardStack";
 import { Button } from "../ui/button";
 import ResumeSlider from "../Templates/ResumeSlider";
+import { useNavigate } from "react-router-dom";
 
 const Hero = () => {
+  const navigate = useNavigate();
   const CARDS = [
     {
       id: 0,
@@ -59,7 +61,11 @@ const Hero = () => {
                 hired at top companies
               </h1>
               <div className="flex flex-row gap-8 my-4 md:my-8">
-                <Button className="py-2 h-14 bg-[#0096ff] z-10" size="lg">
+                <Button
+                  className="py-2 h-14 bg-[#0096ff] z-10"
+                  size="lg"
+                  onClick={() => navigate("/create-cv")}
+                >
                   Create Your CV
                 </Button>
               </div>

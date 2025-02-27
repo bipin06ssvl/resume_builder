@@ -1,12 +1,16 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { use } from "react";
+import { Link, useNavigate } from "react-router-dom";
 
 const Footer = () => {
+  const navigate = useNavigate();
   return (
     <>
       <footer className="w-full h-full border-t border-gray-400">
         <div className="m-auto lg:max-w-7xl pt-20">
-          <div className="w-full flex justify-center text-3xl mb-10">
+          <div
+            className="w-full flex justify-center text-3xl mb-10"
+            onClick={() => navigate("/create-cv")}
+          >
             <Link className="group flex items-center gap-2">
               Create a Resume{" "}
               <i className="fa-solid fa-chevron-right text-lg text-white bg-gray-700 group-hover:bg-[#0096ff] w-12 h-12 pt-[10px] text-center rounded-full"></i>

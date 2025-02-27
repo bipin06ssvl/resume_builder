@@ -2,8 +2,10 @@ import React from "react";
 import { PulsatingButton } from "../magicui/pulsating-button";
 import bgCard from "../../assets/Images/bg-card.svg";
 import resume from "../../assets/Images/Resume/resume1.png";
+import { useNavigate } from "react-router-dom";
 
 const FeatureResume = () => {
+  const navigate = useNavigate();
   return (
     <>
       <section className="w-full ">
@@ -19,7 +21,9 @@ const FeatureResume = () => {
                 and sections.
               </p>
               <div className="flex flex-row flex-wrap justify-center md:justify-start items-center mt-8">
-                <PulsatingButton>Build Your Resume</PulsatingButton>
+                <PulsatingButton onClick={() => navigate("/create-cv")}>
+                  Build Your Resume
+                </PulsatingButton>
               </div>
             </div>
             <div className="flex items-center justify-center ml-4 md:ml-0 w-[90%]">

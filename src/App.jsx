@@ -9,22 +9,34 @@ import "./App.css";
 import Header from "./components/Header/Header";
 import Home from "./Home/Home";
 import Footer from "./components/Footer/Footer";
+import CreateCV from "./components/Pages/CreateCV";
+
+function Layout({ children }) {
+  const location = useLocation();
+
+  // Hide Header & Footer on /create-cv page
+  const hideHeaderFooter = location.pathname === "/create-cv";
+
+  return (
+    <>
+      {!hideHeaderFooter && <Header />}
+      <main>{children}</main>
+      {!hideHeaderFooter && <Footer />}
+    </>
+  );
+}
 
 function App() {
   // bg color #fafbfd
   return (
-    <>
-      <Router>
-        <Header />
-        {/* <main className="w-full px-0"> */}
+    <Router>
+      <Layout>
         <Routes>
           <Route path="/" element={<Home />} />
-          {/* <Route path="/about" element={<About />} /> */}
+          <Route path="/create-cv" element={<CreateCV />} />
         </Routes>
-        {/* </main> */}
-        <Footer />
-      </Router>
-    </>
+      </Layout>
+    </Router>
   );
 }
 
